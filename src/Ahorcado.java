@@ -11,6 +11,7 @@ public class Ahorcado {
 		Integer contVictoria = 0;
 		char[] palabra = { 'O', 'R', 'N', 'I', 'T', 'O', 'R', 'R', 'I', 'N', 'C', 'O' };
 		char letra = ' ';
+		String c;
 		char[] incognita = new char[palabra.length];
 		String secreto = "";
 		char[] usadas = new char[intentosMaximos];
@@ -26,8 +27,11 @@ public class Ahorcado {
 			do {
 				mensaje(secreto, intentosMaximos, contErr, cUsadas);
 				System.out.printf("\nIntroduce una letra: ");
-				letra = sc.nextLine().charAt(0);
-				letra = Character.toUpperCase(letra);
+				do {
+					c = sc.nextLine().trim().toUpperCase();
+				} while (c.isEmpty());
+
+				letra = c.charAt(0);
 				if (!Character.isLetter(letra)) {
 					System.out.println("\n\n\n\n\n\n\n\n\nNO ES UNA LETRA\n\n\n\n\n\n");
 					Thread.sleep(3000);
