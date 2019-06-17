@@ -46,7 +46,7 @@ public class Boxeador {
 
 	@Override
 	public String toString() {
-		return "Boxeador [id=" + id + ", peso=" + peso + ", catgoria=" + categoria + "]";
+		return "Boxeador [peso=" + peso + ", catgoria=" + categoria + "]";
 	}
 
 	// getters & setters
