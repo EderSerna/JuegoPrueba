@@ -9,17 +9,17 @@ public class TrenTest {
 	@Test
 	public void testTrenLleno() {
 		boolean b;
-		b=t1.trenLleno(400);
+		b=t1.trenLleno();
 		assertEquals(true, b);
-		b=t1.trenLleno(350);
+		b=t1.trenLleno();
 		assertEquals(false, b);
 	}
 
 	@Test
 	public void testDemasiadoViejo() {
-		String cad=t1.demasiadoViejo(39);
+		String cad=t1.demasiadoViejo();
 		assertEquals("EN CIRCULACION",cad);
-		cad=t1.demasiadoViejo(40);
+		cad=t1.demasiadoViejo();
 		assertEquals("FUERA DE CIRCULACION", cad);
 	}
 

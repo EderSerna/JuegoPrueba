@@ -39,7 +39,7 @@ public class Numeros {
 		/**
 		 * Imprimir por pantalla todos los multiplos
 		 */
-		System.out.println("Hay un total de " + multiplos.size() + " multiplos de 7\n");
+		System.out.println("Hay un total de " + multiplos.size() + " multiplo(s) de 7\n");
 		for (int i = 0; i < multiplos.size(); i++) {
 			System.out.println("Multiplo numero " + (i + 1) + ": " + multiplos.get(i));
 		}

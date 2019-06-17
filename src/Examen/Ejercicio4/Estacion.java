@@ -9,17 +9,17 @@ public class Estacion {
 		Tren t2 = new Tren(1, 1, lleno2, viejo2);
 		String cad;
 
-		if (t1.trenLleno(lleno1))
+		if (t1.trenLleno())
 			cad = "Tren lleno";
 		else
 			cad = "Aún quedan asientos";
-		System.out.println(t1 + " " + t1.demasiadoViejo(viejo1) + " " + cad);
+		System.out.println(t1 + " " + t1.demasiadoViejo() + " " + cad);
 
-		if (t2.trenLleno(lleno2))
+		if (t2.trenLleno())
 			cad = "Tren lleno";
 		else
 			cad = "Aún quedan asientos";
-		System.out.println(t2 + " " + t2.demasiadoViejo(viejo2) + " " + cad);
+		System.out.println(t2 + " " + t2.demasiadoViejo() + " " + cad);
 	}
 
 }

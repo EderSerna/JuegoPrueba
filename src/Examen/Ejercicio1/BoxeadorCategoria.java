@@ -20,6 +20,7 @@ public class BoxeadorCategoria {
 				Boxeador b = new Boxeador(i, peso);
 				System.out.println(b);
 			} catch (Exception e) {
+				e.printStackTrace();
 				System.out.println("Ha introducido datos sin el formato indicado o fuera de rango");
 				System.exit(0);
 			}

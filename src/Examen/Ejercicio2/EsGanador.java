@@ -24,8 +24,8 @@ public class EsGanador {
 	 * Recoge una cantidad de puntos y devuelve true si se cree que es ganador y
 	 * false si no
 	 * 
-	 * @param pt
-	 * @return
+	 * @param pt es un int que refleja los puntos que le pasas
+	 * @return devuelve true si pt es mayor igual a 70
 	 */
 	public static boolean ganar(double pt) {
 		boolean b;

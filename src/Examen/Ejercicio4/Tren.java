@@ -4,15 +4,15 @@ public class Tren {
 	private int tipo;
 	private int referencia;
 	private int asientosOcupados;
-	private int añosActivo;
+	private int aniosActivo;
 	
 	
-	public Tren(int tipo, int referencia, int asientosOcupados, int añosActivo) {
+	public Tren(int tipo, int referencia, int asientosOcupados, int aniosActivo) {
 		super();
 		this.tipo = tipo;
 		this.referencia = referencia;
 		this.asientosOcupados = asientosOcupados;
-		this.añosActivo = añosActivo;
+		this.aniosActivo = aniosActivo;
 	}
 	
 	
@@ -48,19 +48,19 @@ public class Tren {
 
 
 	public int getAñosActivo() {
-		return añosActivo;
+		return aniosActivo;
 	}
 
 
-	public void setAñosActivo(int añosActivo) {
-		this.añosActivo = añosActivo;
+	public void setAñosActivo(int aniosActivo) {
+		this.aniosActivo = aniosActivo;
 	}
 	
 	
 	
-	public boolean trenLleno(int asiOcu) {
+	public boolean trenLleno() {
 		boolean b;
-		if(asiOcu>=400)
+		if(this.asientosOcupados>=400)
 			b=true;
 		else
 			b=false;
@@ -68,9 +68,9 @@ public class Tren {
 		return b;
 	}
 	
-	public String demasiadoViejo(int aActivo) {
+	public String demasiadoViejo() {
 		String cad;
-		if(aActivo >=40)
+		if(this.aniosActivo >=40)
 			cad="FUERA DE CIRCULACION";
 		else
 			cad="EN CIRCULACION";
@@ -83,7 +83,7 @@ public class Tren {
 	@Override
 	public String toString() {
 		return "Tren [tipo=" + tipo + ", referencia=" + referencia + ", asientosOcupados=" + asientosOcupados
-				+ ", añosActivo=" + añosActivo + "]";
+				+ ", aniosActivo=" + aniosActivo + "]";
 	}
 	
 	
