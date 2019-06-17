@@ -6,6 +6,8 @@ import org.junit.Test;
 
 public class TrenTest {
 	Tren t1=new Tren(0,0,350,39);
+	
+	
 	@Test
 	public void testTrenLleno() {
 		boolean b;
